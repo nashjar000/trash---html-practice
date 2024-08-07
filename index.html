@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,30 @@
     <link rel="stylesheet" href="styles.css">
     <title>HTML Tags</title>
 </head>
-<body>
-    <h1>Playing Around with <code>&lt;!DOCTYPE html&gt;</HTML></code> Tags!</h1>
-    <p>I wanted to play around with some HTML tags. Here's what I worked on. Use the inspection tool to view the code I wrote.</p>
-    <p>Link to the video I used for this: <a href="https://youtu.be/VkWJQe_EsjQ" target="_blank">https://youtu.be/VkWJQe_EsjQ</a></p>
 
+<body>
+    <!-- Heading with a code snippet -->
+    <h1>Playing Around with <code>&lt;!DOCTYPE html&gt;</code> Tags!</h1>
+
+    <p>I wanted to play around with some HTML tags. Here's what I worked on. Use the inspection tool to view the code I
+        wrote.</p>
+    <p>Link to the video I used for this: <a href="https://youtu.be/VkWJQe_EsjQ"
+            target="_blank">https://youtu.be/VkWJQe_EsjQ</a></p>
+
+    <!-- Abbreviation tag -->
     <h2>abbr text</h2>
     <p>Hover over the text below</p>
     <abbr title="HyperText Markup Language">HTML</abbr>
 
+    <!-- Code tag -->
     <h2>code text</h2>
     <p>the <code>&lt;code&gt;</code></p>
 
+    <!-- Keyboard tag -->
     <h2>kbd text</h2>
     <p>press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy</p>
 
+    <!-- Variable tag -->
     <h2>var text</h2>
     <p>Start typing in the textbox below</p>
     <input type="input" list="colors">
@@ -31,43 +41,62 @@
         <option value="blue"></option>
     </datalist>
 
+    <!-- Dialog tag -->
     <h2>dialog text</h2>
     <p>Click the button below to open a dialog box</p>
-    <dialog><p>This is a dialog box!</p></dialog>
+    <dialog>
+        <p>This is a dialog box!</p>
+    </dialog>
     <button onclick="openMe()">Open</button>
 
+    <!-- Script tag that defines the openMe function -->
     <script>
         function openMe() {
             document.querySelector('dialog').showModal();
         }
     </script>
 
+    <!-- Details and summary tag -->
     <h2>details/summary</h2>
     <p>Click the button below to open a summary box.</p>
     <p>(This doesn't require any css or js! :) )</p>
 
+    <!-- Details/Summary tag -->
     <h2>FAQ</h2>
     <details>
         <summary>Question 1</summary>
         Answer 1
     </details>
 
+    <!-- Ruby tag -->
     <h2>ruby</h2>
     <ruby>ruby text
         <rt>ruby tag</rt>
         <rp>(ruby part)</rp>
     </ruby>
 
+    <!-- Progress tag -->
     <h2>progress</h2>
     <progress max="100" value="73"></progress>
 
+    <!-- Meter tag -->
     <h2>meter</h2>
     <meter min="0" max="100" value="88" low="20" high="80" optimum="90"></meter>
 
+    <!-- Fieldset tag -->
     <h2>fieldset</h2>
     <fieldset>
         <legend>Legend</legend>
         <p>Text</p>
     </fieldset>
+
+    <!-- Image of the code -->
+    <h2>The code:</h2>
+    <p>Here's a screenshot of the code for this page:</p>
+    <p>**For this screenshot, I used an extension called "<a
+            href="https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap" target="_blank">CodeSnap</a>" to take
+        a picture of the code.**</p>
+    <img src="./html tags.png" alt="html tags.png" id="code_img">
 </body>
+
 </html>
