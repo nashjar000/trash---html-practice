@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Tags</title>
+</head>
+<body>
+    <h1>Playing Around with <code>&lt;!DOCTYPE html&gt;</HTML></code> Tags!</h1>
+    <p>I wanted to play around with some HTML tags. Here's what I worked on. Use the inspection tool to view the code I wrote.</p>
+    <p>Link to the video I used for this: <a href="https://youtu.be/VkWJQe_EsjQ" target="_blank">https://youtu.be/VkWJQe_EsjQ</a></p>
+
+    <h2>abbr text</h2>
+    <p>Hover over the text below</p>
+    <abbr title="HyperText Markup Language">HTML</abbr>
+
+    <h2>code text</h2>
+    <p>the <code>&lt;code&gt;</code></p>
+
+    <h2>kbd text</h2>
+    <p>press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy</p>
+
+    <h2>var text</h2>
+    <p>Start typing in the textbox below</p>
+    <input type="input" list="colors">
+    <datalist id="colors">
+        <option value="red"></option>
+        <option value="green"></option>
+        <option value="blue"></option>
+    </datalist>
+
+    <h2>dialog text</h2>
+    <p>Click the button below to open a dialog box</p>
+    <dialog><p>This is a dialog box!</p></dialog>
+    <button onclick="openMe()">Open</button>
+
+    <script>
+        function openMe() {
+            document.querySelector('dialog').showModal();
+        }
+    </script>
+
+    <h2>details/summary</h2>
+    <p>Click the button below to open a summary box.</p>
+    <p>(This doesn't require any css or js! :) )</p>
+
+    <h2>FAQ</h2>
+    <details>
+        <summary>Question 1</summary>
+        Answer 1
+    </details>
+
+    <h2>ruby</h2>
+    <ruby>ruby text
+        <rt>ruby tag</rt>
+        <rp>(ruby part)</rp>
+    </ruby>
+
+    <h2>progress</h2>
+    <progress max="100" value="73"></progress>
+
+    <h2>meter</h2>
+    <meter min="0" max="100" value="88" low="20" high="80" optimum="90"></meter>
+
+    <h2>fieldset</h2>
+    <fieldset>
+        <legend>Legend</legend>
+        <p>Text</p>
+    </fieldset>
+</body>
+</html>
